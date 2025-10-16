@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    screens: {
+                        GalaxyZ: "344px",
+                        iphoneSE: "375px",
+                        iPhoneXR: "414px",
+                        iPadMini: "768px",
+                        iPadAir: "820px",
+                        SmallLap: "1240px"
+                    },
+                },
+            },
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/6a06cf2ff3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="flex justify-between px-[100px] py-[25px] fixed w-full bg-white GalaxyZ:px-[30px] SmallLap:px-[100px]">
+        <img class="w-[100px] h-auto"
+            src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNzkyLjkgMjIwLjIiIHhtbDpzcGFjZT0icHJlc2VydmUiIHN0eWxlPSJoZWlnaHQ6IDI4cHg7Ij48Zz48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0xNzkuOCw2OS4yYzAtMzkuNC0zOC44LTYzLjYtNzQuOS02My42SDB2MjA4LjdoNjIuOFYxMTMuNGw0OC40LDk5LjJsMC44LDEuNWg3MS4zbC00OS44LTg3LjgKCQlDMTYyLjIsMTE4LjIsMTc5LjgsOTYuNSwxNzkuOCw2OS4yeiBNNjIuOCwzNS44aDE4LjRjMjAsMCwzNCwxNC4yLDM0LDM0LjRjMCwyOS4yLTE2LjcsMzUtNDUuNywzNWgtNi45VjM1LjhINjIuOHoiPjwvcGF0aD4gPHBvbHlnb24gZmlsbD0iY3VycmVudENvbG9yIiBwb2ludHM9IjcxNywxODEuMSA3MTcsMTIzLjggNzg1LjQsMTIzLjggNzg1LjQsOTAuNSA3MTcsOTAuNSA3MTcsMzkgNzg5LDM5IDc4OSw1LjYgNjU0LjMsNS42IDY1NC4zLDIxNC4zIDc5Mi45LDIxNC4zIAoJCTc5Mi45LDE4MS4xIAkiPjwvcG9seWdvbj4gPHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJNNTI1LjQsNS42SDQzM3YyMDguN2gxMDEuOWM2Mi41LDAsMTAyLjgtMzkuNCwxMDIuOC0xMDAuNUM2MzcuNCw1MS4xLDU5MC4zLDUuNiw1MjUuNCw1LjZ6IE01NzIuNiwxMDUuNQoJCWMwLDM4LjgtMTUuNCw4MC4xLTU4LjgsODAuMWgtMjAuOVYzNC4yaDE4LjhDNTUzLjgsMzQuMiw1NzIuNiw3MCw1NzIuNiwxMDUuNXoiPjwvcGF0aD4gPHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJNNDEwLjgsMTkuNkwzOTMuMywyLjFsLTIxLjUsMjEuNUMzNTMsOC45LDMyOC44LDAsMzAyLjMsMEMyNDAsMCwxOTEuNCw0OC4zLDE5MS40LDExMGMwLDI2LjcsOS4yLDUwLjksMjQuNiw2OS44CgkJbC0yMS4xLDIxLjFsMTcuNSwxNy41bDIxLjMtMjEuM2MxOC44LDE0LjQsNDIuNSwyMy4xLDY4LjYsMjMuMWM2Mi4zLDAsMTEwLjktNDguMiwxMTAuOS0xMDkuOWMwLTI2LjMtOC44LTUwLjItMjMuOC02OC44CgkJTDQxMC44LDE5LjZ6IE0zMDIuNCwyNy4zYzE5LjQsMCwzMC43LDEyLjcsMzcuMywyOC42bC04MS41LDgxLjVjLTEuNS0xMC40LTEuOS0yMC40LTEuOS0yNy41QzI1Ni4zLDg1LjIsMjYwLjksMjcuMywzMDIuNCwyNy4zegoJCSBNMzQ2LjYsODMuOGMxLjMsMTAsMS43LDE5LjIsMS43LDI2LjFjMCwyNC44LTQuNCw4Mi42LTQ2LjEsODIuNmMtMTksMC0zMC4yLTEyLjEtMzYuOS0yNy43TDM0Ni42LDgzLjh6Ij48L3BhdGg+PC9nPjwvc3ZnPg=="
+            alt="">
+        <ul class="flex gap-[60px] font-semibold text-[1.1rem] GalaxyZ:hidden SmallLap:flex">
+            <li>Products</li>
+            <li>Solutions</li>
+            <li>Apps</li>
+            <li>User Guides</li>
+            <li>Support</li>
+        </ul>
+        <div class="flex gap-[30px]">
+            <img src="data:image/svg+xml;base64,PHN2ZyBkYXRhLXYtNWQ0ZGNkYTY9IiIgd2lkdGg9IjIzIiBoZWlnaHQ9IjIzIiB2aWV3Qm94PSIwIDAgMjMgMjMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iOC44MDI2MSIgY3k9IjguODAyNjEiIHI9IjcuODAyNjEiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiI+PC9jaXJjbGU+IDxwYXRoIGQ9Ik0yMC42NDQ5IDIyLjA1OTlDMjEuMDM1NSAyMi40NTA0IDIxLjY2ODYgMjIuNDUwNCAyMi4wNTkyIDIyLjA1OTlDMjIuNDQ5NyAyMS42Njk0IDIyLjQ0OTcgMjEuMDM2MiAyMi4wNTkyIDIwLjY0NTdMMjAuNjQ0OSAyMi4wNTk5Wk0xNS41NDI5IDE2Ljk1NzhMMjAuNjQ0OSAyMi4wNTk5TDIyLjA1OTIgMjAuNjQ1N0wxNi45NTcxIDE1LjU0MzZMMTUuNTQyOSAxNi45NTc4WiIgZmlsbD0iYmxhY2siPjwvcGF0aD48L3N2Zz4="
+                alt="">
+            <img class="h-[30px] hidden GalaxyZ:block SmallLap:hidden"
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48cGF0aCBkPSJNNDM2IDEyNEgxMmMtNi42IDAtMTItNS40LTEyLTEyVjgwYzAtNi42IDUuNC0xMiAxMi0xMmg0MjRjNi42IDAgMTIgNS40IDEyIDEydjMyYzAgNi42LTUuNCAxMi0xMiAxMnptMCAxNjBIMTJjLTYuNiAwLTEyLTUuNC0xMi0xMnYtMzJjMC02LjYgNS40LTEyIDEyLTEyaDQyNGM2LjYgMCAxMiA1LjQgMTIgMTJ2MzJjMCA2LjYtNS40IDEyLTEyIDEyem0wIDE2MEgxMmMtNi42IDAtMTItNS40LTEyLTEydi0zMmMwLTYuNiA1LjQtMTIgMTItMTJoNDI0YzYuNiAwIDEyIDUuNCAxMiAxMnYzMmMwIDYuNi01LjQgMTItMTIgMTJ6Ij48L3BhdGg+PC9zdmc+"
+                alt="">
+        </div>
+    </nav>
+    <div
+        class="pt-[70px] bg-[url('https://edge.rode.com/images/page/1/modules/10923/rode-wireless-micro-banner-right-10752x3920-rgb-1920x700-546b50c.png')] w-full bg-center object-fit GalaxyZ:bg-none bg-black SmallLap:bg-[url('https://edge.rode.com/images/page/1/modules/10923/rode-wireless-micro-banner-right-10752x3920-rgb-1920x700-546b50c.png')]">
+        <div class="flex p-[50px] text-white text-center GalaxyZ:p-0 GalaxyZ:flex-col-reverse SmallLap:p-[50px]">
+            <div
+                class="w-1/2 flex flex-col gap-[30px] items-center py-[100px] GalaxyZ:p-[20px] GalaxyZ:w-full SmallLap:py-[100px] SmallLap:w-1/2">
+                <img class="w-[80%]"
+                    src="https://edge.rode.com/images/page/1/modules/10923/WirelessMicroKit2_PL_PI_01.svg" alt="">
+                <h1 class="text-3xl font-semibold">Color your story</h1>
+                <p class="text-[#677C83] font-semibold text-[1.1rem] w-[80%]">The award-winning pocket-sized companion
+                    for creators continues to evolve - now available in vibrant new colours to match your style.</p>
+                <div>
+                    <button
+                        class="text-black font-semibold bg-white rounded-full px-[30px] py-[10px] hover:bg-black hover:text-white hover:border border-white hover:transition duration-200 mb-[30px]">
+                        SHOP NOW
+                    </button>
+                </div>
+            </div>
+            <div class="w-1/2 GalaxyZ:w-full h-auto">
+                <img class="SmallLap:hidden"
+                    src="https://edge.rode.com/images/page/1/modules/10923/rode-wireless-micro-banner-5639x5639-rgb-1080x1080-f521e30.png"
+                    alt="">
+            </div>
+        </div>
+    </div>
+    <div
+        class="bg-[url('https://edge.rode.com/images/page/1/modules/11825/rode-rodecaster-video-rode-rcv-banner-7273x2652-rgb-1920x700-546b50c.png')] w-full bg-center object-fit flex GalaxyZ:bg-none bg-black GalaxyZ:flex-col SmallLap:bg-[url('https://edge.rode.com/images/page/1/modules/11825/rode-rodecaster-video-rode-rcv-banner-7273x2652-rgb-1920x700-546b50c.png')] SmallLap:flex-row">
+        <div class="w-[40%] GalaxyZ:w-full SmallLap:w-[40%]">
+            <img class="GalaxyZ:flex SmallLap:hidden"
+                src="https://edge.rode.com/images/page/1/modules/11825/rode-rodecaster-video-rode-rcv-banner-7273x2652-rgb-800x700-39e04e6.png"
+                alt="">
+        </div>
+        <div
+            class="w-[60%] py-[200px] px-[50px] flex flex-col gap-[20px] justify-center items-center GalaxyZ:w-full GalaxyZ:px-[20px] GalaxyZ:py-[50px] SmallLap:w-[60%] SmallLap:py-[200px] SmallLap:px-[50px]">
+            <img class="w-[75%]" src="https://edge.rode.com/images/page/1/modules/10563/RCVideo_PL_PI_01.svg" alt="">
+            <h1 class="text-3xl text-white text-center font-semibold">
+                Video Production, Evolved
+            </h1>
+            <p class="text-[#677C83] font-semibold text-[1.1rem] w-[80%] text-center">A revolutionary all-in-one video
+                and audio production console that combines powerful video switching,
+                recording and production capabilities with a fully integrated professional audio mixer.</p>
+            <div>
+                <button
+                    class="text-black font-semibold bg-white rounded-full px-[30px] py-[10px] hover:bg-black hover:text-white hover:border border-white hover:transition duration-200 mb-[30px]">
+                    SHOP NOW
+                </button>
+            </div>
+        </div>
+    </div>
+    <div
+        class="pt-[90px] bg-[url('https://edge.rode.com/images/page/1/modules/11827/rode-wireless-go-3rd-gen-banner-13964x5091-rgb-1921x700-8c89d38.jpg')] w-full bg-center object-fit GalaxyZ:bg-none bg-black GalaxyZ:pt-0 SmallLap:pt-[90px] SmallLap:bg-[url('https://edge.rode.com/images/page/1/modules/11827/rode-wireless-go-3rd-gen-banner-13964x5091-rgb-1921x700-8c89d38.jpg')]">
+        <div class="flex p-[50px] text-white text-center GalaxyZ:p-0 GalaxyZ:flex-col-reverse SmallLap:p-[50px]">
+            <div
+                class="w-1/2 flex flex-col gap-[30px] items-center py-[100px] GalaxyZ:p-[20px] GalaxyZ:w-full SmallLap:py-[100px] SmallLap:w-1/2">
+                <img class="w-[90%]" src="https://edge.rode.com/images/page/1/modules/11000/WIGOIII_PL_PI_02.svg"
+                    alt="">
+                <h1 class="text-3xl font-semibold">Your Sound, Your Style, Your Story</h1>
+                <p class="text-[#D37A64] font-semibold text-[1.1rem] w-[80%]">The third generation of the world’s most
+                    popular wireless microphone has arrived.</p>
+                <div>
+                    <button
+                        class="text-black font-semibold bg-white rounded-full px-[30px] py-[10px] hover:bg-black hover:text-white hover:border border-white hover:transition duration-200 mb-[30px]">
+                        SHOP NOW
+                    </button>
+                </div>
+            </div>
+            <div class="w-1/2 GalaxyZ:w-full h-auto">
+                <img class="SmallLap:hidden"
+                    src="https://edge.rode.com/images/page/1/modules/11827/rode-wireless-go-3rd-gen-banner-13964x5091-rgb-800x700-c2e3d91.png"
+                    alt="">
+            </div>
+        </div>
+    </div>
+    <div
+        class="bg-[url('https://edge.rode.com/images/page/1/modules/17/rode-coty25-Trophy-Wide-rgb-1920x700-f93c153.png')] w-full bg-center object-fit flex GalaxyZ:bg-none bg-black GalaxyZ:flex-col SmallLap:bg-[url('https://edge.rode.com/images/page/1/modules/17/rode-coty25-Trophy-Wide-rgb-1920x700-f93c153.png')] SmallLap:flex-row">
+        <div class="w-[40%] GalaxyZ:w-full SmallLap:w-[40%]">
+            <img class="GalaxyZ:flex SmallLap:hidden"
+                src="https://edge.rode.com/images/page/1/modules/11935/rode-coty25-Trophy-Tall-rgb-1080x1080-2ac12f9.png"
+                alt="">
+        </div>
+        <div
+            class="w-[60%] py-[200px] px-[50px] flex flex-col gap-[20px] justify-center items-center GalaxyZ:w-full GalaxyZ:px-[20px] GalaxyZ:py-[50px] SmallLap:w-[60%] SmallLap:py-[200px] SmallLap:px-[50px]">
+            <img class="w-[75%]"
+                src="https://edge.rode.com/images/page/1/modules/12142/COTYA25_Logo_On%20Black_Stacked_06.svg" alt="">
+            <div>
+                <button
+                    class="text-black font-semibold bg-white rounded-full px-[30px] py-[10px] hover:bg-black hover:text-white hover:border border-white hover:transition duration-200 mb-[30px] mt-[30px]">
+                    ENTER NOW
+                </button>
+            </div>
+        </div>
+    </div>
+    <div
+        class="pt-[90px] bg-[url('https://edge.rode.com/images/page/1/modules/11826/rode-nt1-ss-black-banner-7234x2637-rgb-1921x700-546b50c.png')] w-full bg-center object-fit GalaxyZ:bg-none bg-black GalaxyZ:pt-0 SmallLap:bg-[url('https://edge.rode.com/images/page/1/modules/11826/rode-nt1-ss-black-banner-7234x2637-rgb-1921x700-546b50c.png')]">
+        <div class="flex p-[50px] text-white text-center GalaxyZ:p-0 GalaxyZ:flex-col-reverse SmallLap:p-[50px]">
+            <div
+                class="w-1/2 flex flex-col gap-[30px] items-center py-[100px] GalaxyZ:p-[20px] GalaxyZ:w-full SmallLap:py-[100px] SmallLap:w-1/2">
+                <img class="w-[100%]" src="https://edge.rode.com/images/page/1/modules/10926/NT1SS_PL_PMI_01.svg"
+                    alt="">
+                <h1 class="text-3xl font-semibold">Your New Go-to Studio Mic</h1>
+                <p class="text-[#67747C] font-semibold text-[1.1rem] w-[80%]">The NT1 Signature Series is a workhorse
+                    studio condenser microphone with a warm, silky character, exceptionally low noise and high SPL
+                    handling – ideal in a wide range of studio applications.</p>
+                <div>
+                    <button
+                        class="text-black font-semibold bg-white rounded-full px-[30px] py-[10px] hover:bg-black hover:text-white hover:border border-white hover:transition duration-200 mb-[30px]">
+                        SHOP NOW
+                    </button>
+                </div>
+            </div>
+            <div class="w-1/2 GalaxyZ:w-full h-auto">
+                <img class="SmallLap:hidden"
+                    src="https://edge.rode.com/images/page/1/modules/11826/rode-nt1-ss-black-shot-05-0053-with-out-jacket-8192x5464-rgb-800x700-3308e50.png"
+                    alt="">
+            </div>
+        </div>
+    </div>
+    <div
+        class="bg-[url('https://edge.rode.com/images/page/1/modules/11828/rode-white-range-family-banner-8-products-14967x5457-rgb-1920x700-546b50c.png')] w-full bg-center object-fit flex GalaxyZ:bg-none bg-white GalaxyZ:flex-col GalaxyZ:pt-0 SmallLap:pt-[30px] SmallLap:bg-[url('https://edge.rode.com/images/page/1/modules/11828/rode-white-range-family-banner-8-products-14967x5457-rgb-1920x700-546b50c.png')] SmallLap:flex-row">
+        <div class="w-[40%] GalaxyZ:w-full SmallLap:w-[40%]">
+            <img class="GalaxyZ:flex SmallLap:hidden"
+                src="https://edge.rode.com/images/page/1/modules/11828/rode-white-range-family-hero-shot-6-products-8192x5464-rgb-800x700-b99ab5a.png"
+                alt="">
+        </div>
+        <div
+            class="w-[60%] py-[200px] px-[50px] flex flex-col gap-[20px] justify-center items-center GalaxyZ:w-full GalaxyZ:px-[20px] GalaxyZ:py-[50px] SmallLap:w-[60%] SmallLap:py-[200px] SmallLap:px-[50px]">
+            <img class="w-[85%] GalaxyZ:w-full SmallLap:w-[85%]"
+                src="https://edge.rode.com/images/page/1/modules/11828/R%C3%98DE%20Banner%20Bundles_Header-BLACK.svg"
+                alt="">
+            <h1 class="text-3xl text-black text-center font-semibold">
+                Gear Up and Start Creating
+            </h1>
+            <p class="text-[#677C83] font-semibold text-[1.1rem] w-[80%] text-center">Ranging from compact street
+                interview kits to complete studio setups, there's a RØDE kit for every stage of your creative journey.
+            </p>
+            <div>
+                <button
+                    class="text-white font-semibold bg-black rounded-full px-[30px] py-[10px] hover:bg-white hover:text-black hover:border border-black hover:transition duration-200 mb-[30px]">
+                    SHOP NOW
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="bg-[#F8F9FA] flex flex-col gap-[50px]">
+        <div>
+            <h1
+                class="bg-white text-center text-4xl font-semibold py-[30px] GalaxyZ:px-[50px] SmallLap:py-[30px] SmallLap:px-0">
+                <u>Latest
+                    From The RØDE Blog</u>
+            </h1>
+        </div>
+        <div
+            class="flex justify-center px-[100px] gap-[30px] GalaxyZ:flex-col GalaxyZ:px-[20px] text-center SmallLap:flex-row SmallLap:px-[100px]">
+            <div class="w-[50%] flex flex-col gap-[30px] items-center bg-white GalaxyZ:w-full SmallLap:w-[50%]">
+                <h1 class="text-3xl text-[#212529] pt-[20px]">Wireless Micro | Colour Your Story</h1>
+                <img class="h-auto"
+                    src="https://edge.rode.com/images/page/1/modules/11935/rode-wireless-micro-colours-0003-rgb-1080x1080-f521e30.png"
+                    alt="">
+                <p class="text-[#212529] text-center font-semibold">The award-winning Wireless Micro is now available in
+                    three vibrant new
+                    colours.</p>
+                <div>
+                    <button
+                        class="text-white font-bold bg-black rounded-full px-[30px] py-[10px] hover:bg-white hover:text-black hover:border border-black hover:transition duration-200 mb-[30px]">
+                        LEARN MORE
+                    </button>
+                </div>
+            </div>
+            <div class="w-[50%] flex flex-col gap-[30px] items-center bg-white GalaxyZ:w-full SmallLap:w-[50%]">
+                <h1 class="text-3xl text-[#212529] pt-[20px]">Creator of the Year 2025 is Here!</h1>
+                <img class="h-auto"
+                    src="https://edge.rode.com/images/page/1/modules/11935/rode-coty25-Trophy-Tall-rgb-1080x1080-2ac12f9.png"
+                    alt="">
+                <p class="text-[#212529] text-center font-semibold w-[85%]">The ultimate global celebration of content
+                    creation is back for 2025.</p>
+                <div>
+                    <button
+                        class="text-white font-bold bg-black rounded-full px-[30px] py-[10px] hover:bg-white hover:text-black hover:border border-black hover:transition duration-200 mb-[30px]">
+                        LEARN MORE
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div
+            class="flex justify-center px-[100px] gap-[30px] GalaxyZ:flex-col GalaxyZ:px-[20px] text-center SmallLap:flex-row SmallLap:px-[100px]">
+            <div class="w-[50%] flex flex-col items-center bg-white GalaxyZ:w-full SmallLap:w-[50%]">
+                <h1 class="text-3xl text-[#212529] pt-[15px]">NDI Support Arrives for RØDECaster Video</h1>
+                <img class="h-auto"
+                    src="https://edge.rode.com/images/page/1/modules/11935/rode-rodecaster-video-ndi-key-visuals-5064x3377-rgb01-1080x1080-3aedb33.png"
+                    alt="">
+                <p class="text-[#212529] text-center font-semibold pt-[30px]">A powerful new firmware update delivers
+                    NDI Support and a suite of other features to the RØDECaster Video.</p>
+                <div class=" pt-[30px]">
+                    <button
+                        class="text-white font-bold bg-black rounded-full px-[30px] py-[10px] hover:bg-white hover:text-black hover:border border-black hover:transition duration-200 mb-[30px]">
+                        LEARN MORE
+                    </button>
+                </div>
+            </div>
+            <div class="w-[50%] flex flex-col gap-[30px] items-center bg-white GalaxyZ:w-full SmallLap:w-[50%]">
+                <h1 class="text-3xl text-[#212529] pt-[20px]">Introducing RØDE CallMe</h1>
+                <img class="h-auto"
+                    src="https://edge.rode.com/images/page/1/modules/11772/rode-sip-rode-rodecaster-pro-II-on-black-standing-on-edge-2-8192x5464-rgb-1080x1080-0d3dfe2.png"
+                    alt="">
+                <p class="text-[#212529] text-center font-semibold w-[85%]">RØDE CallMe delivers broadcast-quality
+                    remote connectivity to the RØDECaster Pro II and RØDECaster Duo.</p>
+                <div>
+                    <button
+                        class="text-white font-bold bg-black rounded-full px-[30px] py-[10px] hover:bg-white hover:text-black hover:border border-black hover:transition duration-200 mb-[30px]">
+                        LEARN MORE
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer
+        class="bg-black text-white px-[20px] py-[32px] iPadMini:px-[40px] iPadMini:py-[24px] SmallLap:px-[100px] SmallLap:py-[40px]">
+
+        <div class="flex flex-col iPadMini:flex-row-reverse iPadMini:justify-between">
+
+            <div class="flex flex-col items-center text-center gap-[16px] iPadMini:items-end iPadMini:text-right">
+                <h2 class="font-semibold text-[24px]">Subscribe to our latest <br> news and offers</h2>
+                <div>
+                    <button
+                        class="text-black font-semibold bg-white rounded-full px-[30px] py-[10px] hover:bg-black hover:text-white hover:border border-white transition duration-200">
+                        SUBSCRIBE
+                    </button>
+                </div>
+            </div>
+
+            <div class="mt-[40px] iPadMini:mt-0">
+                <div class="iPadMini:hidden">
+                    <div class="flex justify-between items-center py-[16px] border-b border-t border-[#7A7A7A]">
+                        <h3 class="font-semibold text-lg">Products</h3>
+                        <i class="fa-solid fa-chevron-right text-[#7A7A7A]"></i>
+                    </div>
+                    <div class="flex justify-between items-center py-[16px] border-b border-[#7A7A7A]">
+                        <h3 class="font-semibold text-lg">Service</h3>
+                        <i class="fa-solid fa-chevron-right text-[#7A7A7A]"></i>
+                    </div>
+                    <div class="flex justify-between items-center py-[16px] border-b border-[#7A7A7A]">
+                        <h3 class="font-semibold text-lg">Company</h3>
+                        <i class="fa-solid fa-chevron-right text-[#7A7A7A]"></i>
+                    </div>
+                </div>
+
+                <div class="hidden iPadMini:flex iPadMini:gap-[80px]">
+                    <ul class="flex flex-col gap-[8px] text-[#7A7A7A]">
+                        <li class="font-semibold text-white text-lg">Products</li>
+                        <li>Microphones</li>
+                        <li>Headphones</li>
+                        <li>Interfaces and Mixers</li>
+                        <li>Accessories</li>
+                        <li>Kits</li>
+                        <li>Apparel</li>
+                        <li>Apps</li>
+                    </ul>
+                    <ul class="flex flex-col gap-[8px] text-[#7A7A7A]">
+                        <li class="font-semibold text-white text-lg">Service</li>
+                        <li>Support Centre</li>
+                        <li>Warranty Login</li>
+                        <li>Where to Buy</li>
+                        <li>Authorised Dealers</li>
+                    </ul>
+                    <ul class="flex flex-col gap-[8px] text-[#7A7A7A]">
+                        <li class="font-semibold text-white text-lg">Company</li>
+                        <li>About RØDE</li>
+                        <li>News and Info</li>
+                        <li>Career Opportunities</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr class="h-px my-[32px] bg-[#7A7A7A] border-0 GalaxyZ:hidden iPadMini:block SmallLap:block">
+
+        <div class="flex flex-col items-center gap-[32px] iPadMini:flex-row iPadMini:justify-between">
+
+            <div class="flex flex-col items-center gap-[24px] iPadMini:items-start">
+                <div class="flex gap-[10px] items-center GalaxyZ:mt-[20px] SmallLap:mt-0">
+                    <i class="fa-solid fa-globe"></i>
+                    <p>International</p>
+                </div>
+                <p class="text-[#7A7A7A] font-semibold text-[14px]">Privacy Policy | Terms & Conditions | Cookie Policy
+                </p>
+            </div>
+
+            <div class="flex flex-col items-center gap-[12px] iPadMini:items-end">
+                <img class="w-[25%] max-w-[80px] h-auto"
+                    src="https://cdn.rode.com/website/images/logo/RODE_Logo_inverse_87x51_RGB.svg" alt="Rode Logo">
+                <p class="text-[#7A7A7A] text-[14px]">© 2025 RØDE All Rights Reserved.</p>
+                <div class="flex gap-[16px] text-[18px]">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                    <i class="fa-brands fa-twitch"></i>
+                    <i class="fa-brands fa-discord"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
